@@ -6,7 +6,7 @@ class RequestHeaders {
         };
     }
 
-    getBasicJsonHeadersWithBearerAuth(token) {
+    getBasicJsonHeadersWithJWTAuth(token) {
         let basicHeaders = this.getBasicJsonHeaders();
         let bearerAuthHeader = {Authorization: "JWT " + token};
 
